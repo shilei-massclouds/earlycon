@@ -1,0 +1,10 @@
+[workspace]
+resolver = "2"
+
+members = [
+    "earlycon",
+    "top_earlycon",
+]
+
+[profile.release]
+lto = true
