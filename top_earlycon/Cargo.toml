@@ -6,5 +6,5 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-arch_boot = { git = "ssh://git@github.com/shilei-massclouds/arch_boot.git" }
+boot = { git = "ssh://git@github.com/shilei-massclouds/boot.git" }
 earlycon = { git = "ssh://git@github.com/shilei-massclouds/earlycon.git" }
