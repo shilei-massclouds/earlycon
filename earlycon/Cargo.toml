@@ -13,7 +13,7 @@ default = []
 [dependencies]
 log = "0.4"
 cfg-if = "1.0"
-axconfig = { git = "ssh://git@github.com/shilei-massclouds/axconfig.git" }
+config = { git = "ssh://git@github.com/shilei-massclouds/config.git" }
 
 [target.'cfg(target_arch = "x86_64")'.dependencies]
 x86_64 = "0.14"
@@ -27,4 +27,4 @@ sbi-rt = { version = "0.0.2", features = ["legacy"] }
 arm_pl011 = { git = "ssh://git@github.com/Byte-OS/arm_pl011.git" }
 
 [build-dependencies]
-axconfig = { git = "ssh://git@github.com/shilei-massclouds/axconfig.git" }
+config = { git = "ssh://git@github.com/shilei-massclouds/config.git" }

@@ -4,7 +4,7 @@ use crate::earlydev::EarlyDev;
 pub const PSCI_0_2_FN_BASE: u32 = 0x84000000;
 pub const PSCI_0_2_FN_SYSTEM_OFF: u32 = PSCI_0_2_FN_BASE + 8;
 
-const UART_BASE: usize = axconfig::UART_PADDR + axconfig::PHYS_VIRT_OFFSET;
+const UART_BASE: usize = config::UART_PADDR + config::PHYS_VIRT_OFFSET;
 
 static UART: EarlyDev<Pl011Uart> =
     EarlyDev::new(Pl011Uart::new(UART_BASE as *mut u8));

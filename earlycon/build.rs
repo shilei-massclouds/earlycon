@@ -1,5 +1,5 @@
 fn main() {
-    let platform = axconfig::PLATFORM;
+    let platform = config::PLATFORM;
     println!("cargo:rustc-cfg=platform=\"{}\"", platform);
-    println!("cargo:rustc-cfg=platform_family=\"{}\"", axconfig::FAMILY);
+    println!("cargo:rustc-cfg=platform_family=\"{}\"", config::FAMILY);
 }
