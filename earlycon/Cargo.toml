@@ -6,10 +6,6 @@ authors = ["Yuekai Jia <equation618@gmail.com>"]
 description = "ArceOS hardware abstraction layer, provides unified APIs for platform-specific operations"
 license = "GPL-3.0-or-later OR Apache-2.0"
 
-[features]
-monolithic = []
-default = []
-
 [dependencies]
 log = "0.4"
 cfg-if = "1.0"

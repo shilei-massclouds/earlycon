@@ -24,13 +24,3 @@ pub fn putchar(c: u8) {
         c => uart.putchar(c),
     }
 }
-
-pub fn terminate() -> ! {
-    unsafe {
-        core::arch::asm!(
-            "hvc #0",
-            in("x0") PSCI_0_2_FN_SYSTEM_OFF,
-        )
-    }
-    loop {}
-}

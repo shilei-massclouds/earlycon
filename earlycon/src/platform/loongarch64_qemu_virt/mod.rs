@@ -15,10 +15,6 @@ pub fn putchar(c: u8) {
     COM1.get_mut().putchar(c)
 }
 
-pub fn terminate() -> ! {
-    loop {}
-}
-
 pub struct Uart {
     base_address: usize,
 }

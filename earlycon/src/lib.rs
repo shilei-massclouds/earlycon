@@ -14,5 +14,4 @@ pub fn write_bytes(bytes: &[u8]) {
     for c in bytes {
         platform::putchar(*c);
     }
-    platform::terminate();
 }
